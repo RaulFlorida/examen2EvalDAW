@@ -4,9 +4,9 @@ on: [push]
 
 jobs:
   ci:
-  on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
+    steps:
       - uses: actions/checkout@v2
       - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
@@ -15,4 +15,3 @@ jobs:
         with:
           configuration: test/phpunit.xml
           args: --coverage-text
-
