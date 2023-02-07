@@ -22,7 +22,7 @@ class EnanaTest extends TestCase {
         #Se tendrá que probar que la vida es menor que 0 y además que su situación es muerta
 
         //Se le restan 10, asi que deberia de estar muerta
-        $enana = new Enana('Bruwngeilda',0,'limbo');
+        $enana = new Enana('Bruwngeilda',2,'viva');
         $this->assertEquals('muerta',$enana->heridaLeve());
 
     }
